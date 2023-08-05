@@ -3,10 +3,49 @@
     padding: 0;
     margin: 0;
 }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input, label{
+    display: block;
+    margin-top: 10px;
+}
+
+label{
+    color: white;
+}
+
+input{
+    background-color: #182C25;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+h2{
+    color: white;
+}
+
 html, body{
     display: flex;
     width: 100%;
     height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .flex-container{
@@ -16,14 +55,30 @@ html, body{
 }
 
 .form-container{
+    /* display: grid; */
+    border: 1px solid blue;
+    width: 100vh;
+    margin-left: 5vw;
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); */
+}
+
+form{
     display: grid;
-    grid-template-columns: repeat(3);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 1em;
 }
 
 .boiler-plate{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 25px;
+    color: white;
+    margin-left: 5vw;
 }
+
 img{
     position: relative;
     left: 0;
@@ -33,6 +88,7 @@ img{
     /* display: flex; */
     /* flex-basis: 20%; */
 }
+
 .sign-up-form{
     background-color: white;
     height: 100vh;
@@ -42,6 +98,6 @@ img{
     background-color: #182C25;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 5vh;
 }
