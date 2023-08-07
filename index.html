@@ -48,12 +48,14 @@
     
                         <div>
                             <label for="user_password">Password</label>
-                            <input type="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Minimum 8 letter, one number and one letter" id="user_password" placeholder="********" autocomplete="off">
+                            <input name="password" type="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Minimum 8 letter, one number and one letter" id="user_password" placeholder="********" autocomplete="off">
+                            <p class="error"></p>
                         </div>
     
                         <div>
                             <label for="user_confirm_password">Confirm Password</label>
-                            <input type="password" id="user_confirm_password" placeholder="********" autocomplete="off" required>
+                            <input name="confirm_password" type="password" id="user_confirm_password" placeholder="********" autocomplete="off" required>
+                            <p class="error"></p>
                         </div>
                     </form>
                 </div>

@@ -8,6 +8,10 @@
     color: rgba(197, 179, 179, 0.5);
 }
 
+.error{
+    margin-top: 0.5rem;
+}
+
 input{
     border: 0;
 }
