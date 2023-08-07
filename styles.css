@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+input{
+    border: 0;
+}
+
 button,
 input,
 select,
@@ -16,7 +20,7 @@ input,
 textarea,
 select,
 button {
-  width: 150px;
+  width: 200px;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -27,6 +31,7 @@ input, label{
     margin-top: 10px;
 }
 
+
 label{
     color: white;
 }
@@ -34,7 +39,17 @@ label{
 input{
     background-color: #182C25;
     border: 1px solid black;
+    outline: none;
     border-radius: 5px;
+    padding: 5px;
+    color: white;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input:focus-within{
+    border: 1px solid lightgreen;
+    box-shadow: 0px 5px 10px 0px black;
 }
 
 h2{
